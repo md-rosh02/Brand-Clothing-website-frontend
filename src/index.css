@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import "tailwindcss";
+
+*{
+  box-sizing: border-box;
+  font-family: 'Comfortaa';
+  cursor: default;
+}
+
+html,
+body{
+  height: 100%;
+  width: 100%;
+}
+
+
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('./assets/hector-regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'main';
+  src: url('./assets/main.ttf') format('truetype');
+  font-weight: bolder;
+  font-style:normal;
+}
+
+.big-shoulders-inline {
+  font-family: "Big Shoulders Inline", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.comfortaa{
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.landerP{
+  font-family:'main';
+}
+
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.backG{
+  background: #ffdede;
+}
+
+
+/* Hide scrollbar for Chrome, Safari, and Edge */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+html {
+  scrollbar-width: none;
+}
+
+/* Hide scrollbar for IE and older Edge */
+body {
+  -ms-overflow-style: none;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-slide {
+  animation: slide 35s linear infinite;
+  display: inline-flex;
+}
+
+/* Ensure the container is wide enough */
+.animate-slide > h1 {
+  flex: 0 0 auto;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-slide {
+  animation: slide 20s linear infinite;
+  display: inline-flex;
+}
+
+.animate-slide > h1 {
+  flex: 0 0 auto;
+}
